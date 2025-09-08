@@ -90,16 +90,30 @@
     <section id="contact" class="container">
       <h2>Contact</h2>
       <p>Racontez‑moi votre projet (date, lieu, nombre d'invités, style). Réponse sous 24h.</p>
-      <form id="contactForm">
-        <div class="grid-2">
-          <label>Prénom & Nom<input type="text" name="name" required /></label>
-          <label>Email<input type="email" name="email" required /></label>
-        </div>
-        <label>Téléphone (optionnel)<input type="tel" name="phone" /></label>
-        <label>Votre message<textarea name="message" rows="5" required></textarea></label>
-        <button type="submit" class="btn primary">Envoyer</button>
-        <p class="muted small">(Démo locale : une alerte s'affiche. Pour activer l'envoi réel, remplacez ce formulaire par Formspree.)</p>
-      </form>
+     <form id="contactForm" action="https://formspree.io/f/xvgbddvd" method="POST">
+  <input type="hidden" name="_subject" value="Nouveau message — Momentwedd">
+
+  <div class="grid-2">
+    <label>Prénom & Nom
+      <input type="text" name="name" required>
+    </label>
+    <label>Email
+      <input type="email" name="email" required>
+    </label>
+  </div>
+
+  <label>Téléphone (optionnel)
+    <input type="tel" name="phone">
+  </label>
+
+  <label>Votre message
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+
+  <button type="submit" class="btn primary">Envoyer</button>
+  <p id="form-status" class="muted small" style="margin-top:8px;"></p>
+</form>
+
       <div class="contact-links">
         <a href="mailto:moment.photo.production@gmail.com" class="btn">Email</a>
         <a href="https://wa.me/33648860220" class="btn" target="_blank" rel="noopener">WhatsApp</a>
