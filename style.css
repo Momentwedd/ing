@@ -20,7 +20,7 @@ h2{font-size:28px;margin:6px 0 14px}
 .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--gap)}
 @media(max-width:640px){.grid-2{grid-template-columns:1fr}}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--gap);margin-top:8px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--gap);margin-top:8px}
 .card{border:1px solid #eee;border-radius:var(--radius);padding:18px}
 .card.featured{border-color:#111;box-shadow:0 8px 24px rgba(0,0,0,.08)}
 .price{font-weight:800;font-size:20px;margin-top:-4px}
