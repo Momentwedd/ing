@@ -1,138 +1,196 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Momentwedd — Photographe & vidéaste de mariage • Grand Est & France</title>
-  <meta name="description" content="Reportages photo & vidéo de mariage — naturels, lumineux et intemporels. Basé à Strasbourg, disponible Grand Est et partout en France. Prix : sur devis." />
-<link rel="icon" href="/favicon.jpg?v=4" type="image/jpeg">
-<link rel="apple-touch-icon" href="/favicon.jpg?v=4">
-  <meta property="og:title" content="Momentwedd — Photographe & vidéaste de mariage" />
-  <meta property="og:description" content="Des images naturelles et élégantes. Demandez un devis en 2 minutes." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://momentwedd.fr/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1600&auto=format&fit=crop" />
+  <title>Momentwedd — Photographe & Vidéaste de mariage, Strasbourg & Monde</title>
+  <meta name="description" content="Luiza (photographe) & Artak (vidéaste). Duo photo+vidéo poétique, naturel et stylé. Basés à Strasbourg, disponibles partout en France et à l'international." />
+  <link rel="icon" href="favicon.jpg" />
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="container hero">
-    <div class="hero-text">
-      <h1>Momentwedd</h1>
-      <p class="subtitle">Photographe & vidéaste de mariage — Grand Est & partout en France</p>
-      <p class="tagline">Des images naturelles, lumineuses et intemporelles qui racontent votre journée.</p>
-      <div class="cta">
-        <a class="btn primary" href="#contact">Demander un devis</a>
-        <a class="btn" href="https://wa.me/33648860220" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn" href="https://www.instagram.com/moment_wedding_production/" target="_blank" rel="noopener">Instagram</a>
-      </div>
-      <ul class="badges">
-        <li>↗ Galerie en ligne sécurisée</li>
-        <li>↗ Teaser vidéo 60–90s (option)</li>
-        <li>↗ Drone selon météo & zone</li>
-      </ul>
-    </div>
-    <div class="hero-img">
-      <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1600&auto=format&fit=crop" alt="Couple de mariés au coucher du soleil" />
-    </div>
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="brand" href="#top">Momentwedd</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="site-nav">
+      <a href="#photos">Photos</a>
+      <a href="#videos">Vidéos</a>
+      <a href="#about">À propos</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#temoignages">Témoignages</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <section id="about" class="container">
-      <h2>À propos</h2>
-      <p>Je m'appelle Artak. J'accompagne les couples avec une approche documentaire et artistique : moments vrais, lumière naturelle, couleurs fidèles. Direction douce quand nécessaire — pour des souvenirs élégants et authentiques.</p>
-    </section>
-
-    <section id="work" class="container">
-      <h2>Portfolio</h2>
-      <div class="grid">
-        <figure><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt="Ceremonie" /><figcaption>Cérémonie</figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1496439786094-e697ca3584b2?q=80&w=1200&auto=format&fit=crop" alt="Couple" /><figcaption>Couple</figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1485872299829-c673f5194813?q=80&w=1200&auto=format&fit=crop" alt="Details" /><figcaption>Détails</figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1521334726092-b509a19597b1?q=80&w=1200&auto=format&fit=crop" alt="Soiree" /><figcaption>Soirée</figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200&auto=format&fit=crop" alt="Famille" /><figcaption>Famille</figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop" alt="Alliances" /><figcaption>Alliances</figcaption></figure>
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="hero__inner">
+      <h1>Photographe & Vidéaste de mariage</h1>
+      <p class="tags">Poétique • Naturel • Authentique • Élégant • Intime • Stylé</p>
+      <div class="cta">
+        <a href="#photos" class="btn">Découvrir nos photos</a>
+        <a href="#videos" class="btn btn--ghost">Voir nos vidéos</a>
       </div>
-    </section>
-
-    <section id="pricing" class="container">
-      <h2>Tarifs</h2>
-      <div class="cards">
-        <div class="card featured">
-          <h3>Sur devis</h3>
-          <p class="price">Adapté à votre journée</p>
-      <ul>
-  <li>Couverture photo et/ou vidéo</li>
-  <li>Galerie privée en qualité supérieure</li>
-  <li>Vidéo livrée en Full HD</strong></li>
-  <li>Options : teaser, album, drone</li>
-</ul>
-          <a href="#contact" class="btn primary">Demander un devis</a>
-        </div>
-      </div>
-      <p class="muted">Chaque mariage est unique — dites‑moi la date, le lieu et vos envies pour une proposition personnalisée.</p>
-    </section>
-
-    <section id="reviews" class="container">
-      <h2>Avis clients</h2>
-      <div class="quotes">
-        <blockquote>“Discret, gentil et très pro. Les photos sont sublimes !” — Élodie & Maxime</blockquote>
-        <blockquote>“Nous avons revécu notre journée du début à la fin. Merci infiniment.” — Sarah & Thomas</blockquote>
-      </div>
-    </section>
-
-    <section id="faq" class="container">
-      <h2>FAQ</h2>
-      <details><summary>Combien de photos livrez‑vous ?</summary><p>Selon la couverture, entre 200 et 600 photos retouchées (couleur + quelques N&B).</p></details>
-      <details><summary>En combien de temps livrez‑vous ?</summary><p>Galerie en ligne sous 3 à 6 semaines. Un aperçu de 20–30 photos sous 72h.</p></details>
-      <details><summary>Vous déplacez‑vous ?</summary><p>Oui, basé à Strasbourg — déplacements Grand Est et France/Europe.</p></details>
-    </section>
-
-    <section id="contact" class="container">
-      <h2>Contact</h2>
-      <p>Racontez‑moi votre projet (date, lieu, nombre d'invités, style). Réponse sous 24h.</p>
-     <form id="contactForm" action="https://formspree.io/f/xvgbddvd" method="POST">
-  <input type="hidden" name="_subject" value="Nouveau message — Momentwedd">
-
-  <div class="grid-2">
-    <label>Prénom & Nom
-      <input type="text" name="name" required>
-    </label>
-    <label>Email
-      <input type="email" name="email" required>
-    </label>
-  </div>
-
-  <label>Téléphone (optionnel)
-    <input type="tel" name="phone">
-  </label>
-
-  <label>Votre message
-    <textarea name="message" rows="5" required></textarea>
-  </label>
-
-  <button type="submit" class="btn primary">Envoyer</button>
-  <p id="form-status" class="muted small" style="margin-top:8px;"></p>
-</form>
-
-      <div class="contact-links">
-        <a href="mailto:moment.photo.production@gmail.com" class="btn">Email</a>
-        <a href="https://wa.me/33648860220" class="btn" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="https://www.instagram.com/moment_wedding_production/" class="btn" target="_blank" rel="noopener">Instagram</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="container footer">
-    <small>© <span id="year"></span> Momentwedd. Tous droits réservés. — <a href="#mentions">Mentions légales</a></small>
-  </footer>
-
-  <section id="mentions" class="container mentions">
-    <h2>Mentions légales (résumé)</h2>
-    <p>Éditeur : Momentwedd. Contact : moment.photo.production@gmail.com. Hébergeur : GitHub Pages (GitHub, Inc.).</p>
-    <p>Les photos présentées sont la propriété de leurs auteurs. Les images d’illustration peuvent provenir de banques libres (Unsplash).</p>
-    <p>RGPD : vos données (nom, email, message) ne sont utilisées que pour vous répondre et ne sont pas partagées avec des tiers.</p>
+    </div>
+    <!-- Remplace par ton image: assets/hero.jpg -->
   </section>
 
-  <script src="script.js"></script>
+  <!-- PHOTOS / VIDEOS TEASERS -->
+  <section class="pv-grid" id="photos">
+    <h2>Photos</h2>
+    <p class="lead">Émotions vraies, lumière naturelle, détails qui comptent.</p>
+    <div class="grid">
+      <!-- Remplace les src par tes vignettes -->
+      <a class="card" href="https://www.instagram.com/momentwedd/" target="_blank" rel="noopener">
+        <img src="assets/img/photo1.jpg" alt="Mariage - détail" loading="lazy" />
+      </a>
+      <a class="card" href="https://www.instagram.com/momentwedd/" target="_blank" rel="noopener">
+        <img src="assets/img/photo2.jpg" alt="Mariage - couple" loading="lazy" />
+      </a>
+      <a class="card" href="assets/gallery-photos/index.html">
+        <img src="assets/img/photo3.jpg" alt="Mariage - cérémonie" loading="lazy" />
+      </a>
+    </div>
+    <div class="center">
+      <a class="btn" href="assets/gallery-photos/index.html">Voir la galerie complète</a>
+    </div>
+  </section>
+
+  <section class="pv-grid" id="videos">
+    <h2>Vidéos</h2>
+    <p class="lead">Rythme, storytelling et ambiance ciné.</p>
+    <div class="grid">
+      <!-- Exemples YouTube/Vimeo : remplace les liens -->
+      <a class="card video" href="https://www.youtube.com/@momentwedd" target="_blank" rel="noopener">
+        <img src="assets/img/video1.jpg" alt="Highlight film" loading="lazy" />
+        <span class="play">►</span>
+      </a>
+      <a class="card video" href="https://www.youtube.com/@momentwedd" target="_blank" rel="noopener">
+        <img src="assets/img/video2.jpg" alt="Teaser" loading="lazy" />
+        <span class="play">►</span>
+      </a>
+      <a class="card video" href="https://www.youtube.com/@momentwedd" target="_blank" rel="noopener">
+        <img src="assets/img/video3.jpg" alt="Film complet" loading="lazy" />
+        <span class="play">►</span>
+      </a>
+    </div>
+    <div class="center">
+      <a class="btn btn--ghost" href="https://www.youtube.com/@momentwedd" target="_blank" rel="noopener">Voir nos films</a>
+    </div>
+  </section>
+
+  <!-- A PROPOS -->
+  <section id="about" class="about">
+    <div class="about__text">
+      <h2>Luiza & Artak</h2>
+      <p><strong>Luiza — Photographe :</strong> j’aime la nature, les jeux de lumière et ces instants qui passent vite. Mon style&nbsp;: des images sensibles, élégantes et poétiques.</p>
+      <p><strong>Artak — Vidéaste :</strong> je cherche le rythme, le mouvement et l’énergie juste. J’aime mixer musiques & images pour des films dynamiques et stylés. Cool et sociable, j’aide tout le monde à se sentir à l’aise.</p>
+      <p><strong>Moment Wedding Production</strong> est né pour élargir notre équipe et vous offrir encore plus de créativité, d’énergie et de beaux souvenirs.</p>
+      <p class="muted">Basés à Strasbourg • Partout en France et dans le monde</p>
+      <div class="cta">
+        <a href="#contact" class="btn">Demander un devis</a>
+      </div>
+    </div>
+    <div class="about__img">
+      <!-- Remplace par un portrait duo -->
+      <img src="assets/img/about.jpg" alt="Luiza & Artak" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- TARIFS / OFFRES -->
+  <section id="tarifs" class="pricing">
+    <h2>Offres & Tarifs</h2>
+    <div class="pricing__grid">
+      <article class="price-card">
+        <h3>Photo</h3>
+        <ul>
+          <li>Préparatifs → Soirée</li>
+          <li>Galerie en ligne HD</li>
+          <li>Preview sous 72h</li>
+        </ul>
+        <a href="#contact" class="btn">Demander le détail</a>
+      </article>
+      <article class="price-card">
+        <h3>Vidéo</h3>
+        <ul>
+          <li>Teaser 1–2 min</li>
+          <li>Film 6–10 min</li>
+          <li>Montage ciné & musique</li>
+        </ul>
+        <a href="#contact" class="btn">Demander le détail</a>
+      </article>
+      <article class="price-card">
+        <h3>Photo + Vidéo</h3>
+        <ul>
+          <li>Couverture complète</li>
+          <li>Galerie + films</li>
+          <li>Option drone</li>
+        </ul>
+        <a href="#contact" class="btn">Obtenir un devis</a>
+      </article>
+    </div>
+    <p class="muted center">Options : séance engagement, album, drone, livraison express, second shooter…</p>
+  </section>
+
+  <!-- TEMOIGNAGES -->
+  <section id="temoignages" class="testimonials">
+    <h2>Témoignages</h2>
+    <blockquote>
+      « Discrets, pro et passionnés. Leurs images nous ont fait revivre notre journée. »<br/>
+      <cite>— Sarah & Thomas</cite>
+    </blockquote>
+    <blockquote>
+      « Sensibilité, lumière et style. Un rendu poétique et moderne. »<br/>
+      <cite>— Élodie & Maxime</cite>
+    </blockquote>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <h2>FAQ</h2>
+    <details>
+      <summary>Vous vous déplacez ?</summary>
+      <p>Oui, basés à Strasbourg, nous travaillons partout en France et à l’international.</p>
+    </details>
+    <details>
+      <summary>Délais de livraison ?</summary>
+      <p>Preview sous 72h. Galerie photo et films entre 3 et 6 semaines selon la saison.</p>
+    </details>
+    <details>
+      <summary>Comment réserver ?</summary>
+      <p>Un contrat + un acompte pour bloquer la date. Échanges en visio possibles.</p>
+    </details>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p class="lead center">Racontez-nous votre projet, réponse sous 24h.</p>
+    <form class="contact__form" name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+      <div class="row">
+        <input type="text" name="nom" placeholder="Votre nom" required />
+        <input type="email" name="email" placeholder="Votre email" required />
+      </div>
+      <div class="row">
+        <input type="text" name="date" placeholder="Date du mariage (jj/mm/aaaa)" />
+        <input type="text" name="lieu" placeholder="Lieu" />
+      </div>
+      <textarea name="message" rows="6" placeholder="Parlez-nous de votre journée"></textarea>
+      <div class="cta center">
+        <button type="submit" class="btn">Envoyer</button>
+        <a class="btn btn--ghost" href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--ghost" href="https://www.instagram.com/momentwedd/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Momentwedd — Strasbourg • France • Monde</p>
+  </footer>
 </body>
 </html>
