@@ -20,10 +20,12 @@
     <h1>Contact</h1>
     <p class="lead">Racontez-nous votre projet — réponse sous 24h.</p>
 
-    <!-- FormSubmit branché sur ton email -->
-   <form action="https://formsubmit.co/moment.photo.production@gmail.com" method="POST" style="display:grid;gap:.8rem">
+    <form action="https://formsubmit.co/moment.photo.production@gmail.com" method="POST" style="display:grid;gap:.8rem">
       <input type="hidden" name="_subject" value="Nouveau message — Momentwedd">
       <input type="hidden" name="_captcha" value="false">
+      <!-- Optionnel: redirection après envoi -->
+      <!-- <input type="hidden" name="_next" value="https://momentwedd.fr/contact.html?sent=1"> -->
+
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem">
         <input name="nom" type="text" placeholder="Votre nom" required>
         <input name="email" type="email" placeholder="Votre email" required>
