@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Momentwedd</title>
+  <meta name="description" content="Contactez Luiza & Artak pour votre mariage : devis, disponibilités, questions.">
+  <link rel="stylesheet" href="style.css"><script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Momentwedd</a>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a><a href="photos.html">Photos</a><a href="videos.html">Vidéos</a>
+      <a href="about.html">À propos</a><a href="tarifs.html">Tarifs</a><a href="temoignages.html">Témoignages</a>
+      <a href="faq.html">FAQ</a><a href="contact.html" class="btn">Contact</a>
+    </nav>
+  </header>
+
+  <main style="max-width:900px;margin:auto;padding:2rem 1rem">
+    <h1>Contact</h1>
+    <p class="lead">Racontez-nous votre projet — réponse sous 24h.</p>
+
+    <!-- FormSubmit : remplace TON_EMAIL -->
+    <form action="https://formsubmit.co/TON_EMAIL" method="POST" style="display:grid;gap:.8rem">
+      <input type="hidden" name="_subject" value="Nouveau message — Momentwedd">
+      <input type="hidden" name="_captcha" value="false">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem">
+        <input name="nom" type="text" placeholder="Votre nom" required>
+        <input name="email" type="email" placeholder="Votre email" required>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem">
+        <input name="date" type="text" placeholder="Date du mariage (jj/mm/aaaa)">
+        <input name="lieu" type="text" placeholder="Lieu">
+      </div>
+      <textarea name="message" rows="6" placeholder="Parlez-nous de votre journée"></textarea>
+      <p>
+        <button class="btn" type="submit">Envoyer</button>
+        <a class="btn btn--ghost" href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--ghost" href="https://www.instagram.com/momentwedd/" target="_blank" rel="noopener">Instagram</a>
+      </p>
+    </form>
+  </main>
+
+  <footer class="site-footer"><p>© <span id="year"></span> Momentwedd</p></footer>
+</body>
+</html>
 
