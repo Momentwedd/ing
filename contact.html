@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact — Momentwedd</title>
-  <meta name="description" content="Contactez Luiza & Artak pour votre mariage : devis, disponibilités, questions.">
+  <meta name="description" content="Contactez Luiza & Artak pour votre mariage : disponibilités, devis, questions.">
   <link rel="stylesheet" href="style.css"><script defer src="script.js"></script>
+  <style>
+    /* mini styles de secours si besoin */
+    .wrap{max-width:900px;margin:auto;padding:2rem 1rem}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+    @media (max-width:700px){.grid2{grid-template-columns:1fr}}
+    .notice{font-size:.95rem;opacity:.8}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -16,31 +23,55 @@
     </nav>
   </header>
 
-  <main style="max-width:900px;margin:auto;padding:2rem 1rem">
+  <main class="wrap">
     <h1>Contact</h1>
-    <p class="lead">Racontez-nous votre projet — réponse sous 24h.</p>
+    <p class="lead">Parlez-nous de votre journée — on revient vers vous sous 24h.</p>
 
+    <!-- ===== NOUVEAU FORMULAIRE (FormSubmit) ===== -->
     <form action="https://formsubmit.co/moment.photo.production@gmail.com" method="POST" style="display:grid;gap:.8rem">
+      <!-- Config FormSubmit -->
       <input type="hidden" name="_subject" value="Nouveau message — Momentwedd">
       <input type="hidden" name="_captcha" value="false">
-      <!-- Optionnel: redirection après envoi -->
-      <!-- <input type="hidden" name="_next" value="https://momentwedd.fr/contact.html?sent=1"> -->
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://momentwedd.fr/merci.html">
+      <input type="text" name="_honey" style="display:none"> <!-- anti-spam honeypot -->
 
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem">
+      <div class="grid2">
         <input name="nom" type="text" placeholder="Votre nom" required>
         <input name="email" type="email" placeholder="Votre email" required>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem">
-        <input name="date" type="text" placeholder="Date du mariage (jj/mm/aaaa)">
-        <input name="lieu" type="text" placeholder="Lieu">
+
+      <div class="grid2">
+        <input name="date"  type="text" placeholder="Date du mariage (jj/mm/aaaa)">
+        <input name="lieu"  type="text" placeholder="Lieu">
       </div>
-      <textarea name="message" rows="6" placeholder="Parlez-nous de votre journée"></textarea>
+
+      <div class="grid2">
+        <select name="prestation" required>
+          <option value="" disabled selected>Type de prestation</option>
+          <option>Photo</option>
+          <option>Vidéo</option>
+          <option>Photo + Vidéo</option>
+        </select>
+        <input name="telephone" type="tel" placeholder="Téléphone (optionnel)">
+      </div>
+
+      <textarea name="message" rows="7" placeholder="Parlez-nous de vous, de votre ambiance, des invités, du planning…"></textarea>
+
+      <label class="notice" style="display:flex;gap:.5rem;align-items:flex-start">
+        <input type="checkbox" required>
+        <span>J’accepte que mes données soient utilisées pour être recontacté·e au sujet de ma demande.</span>
+      </label>
+
       <p>
         <button class="btn" type="submit">Envoyer</button>
         <a class="btn btn--ghost" href="https://wa.me/33648860220" target="_blank" rel="noopener">WhatsApp</a>
         <a class="btn btn--ghost" href="https://www.instagram.com/momentwedd/" target="_blank" rel="noopener">Instagram</a>
       </p>
+
+      <p class="notice">Astuce : si vous ne voyez pas notre réponse d’ici 24h, vérifiez vos spams ou écrivez-nous sur WhatsApp.</p>
     </form>
+    <!-- ===== /FORMULAIRE ===== -->
   </main>
 
   <footer class="site-footer"><p>© <span id="year"></span> Momentwedd</p></footer>
