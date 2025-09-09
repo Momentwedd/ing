@@ -12,16 +12,17 @@
 <body>
   <!-- HEADER -->
   <header class="site-header">
-    <a class="brand" href="#top">Momentwedd</a>
+    <a class="brand" href="index.html">Momentwedd</a>
     <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
     <nav class="site-nav">
-      <a href="#photos">Photos</a>
-      <a href="#videos">Vidéos</a>
-      <a href="#about">À propos</a>
-      <a href="#tarifs">Tarifs</a>
-      <a href="#temoignages">Témoignages</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact" class="btn">Contact</a>
+      <a href="index.html">Accueil</a>
+      <a href="photos.html">Photos</a>
+      <a href="videos.html">Vidéos</a>
+      <a href="about.html">À propos</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="temoignages.html">Témoignages</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="btn">Contact</a>
     </nav>
   </header>
 
@@ -31,58 +32,59 @@
       <h1>Photographe & Vidéaste de mariage</h1>
       <p class="tags">Poétique • Naturel • Authentique • Élégant • Intime • Stylé</p>
       <div class="cta">
-        <a href="#photos" class="btn">Découvrir nos photos</a>
-        <a href="#videos" class="btn btn--ghost">Voir nos vidéos</a>
+        <a href="photos.html" class="btn">Découvrir nos photos</a>
+        <a href="videos.html" class="btn btn--ghost">Voir nos vidéos</a>
       </div>
     </div>
-    <!-- Remplace par ton image: assets/hero.jpg -->
+    <!-- Image de couverture : /assets/hero.jpg -->
   </section>
 
-  <!-- PHOTOS / VIDEOS TEASERS -->
-  <section class="pv-grid" id="photos">
+  <!-- APERÇU PHOTOS -->
+  <section class="pv-grid">
     <h2>Photos</h2>
     <p class="lead">Émotions vraies, lumière naturelle, détails qui comptent.</p>
     <div class="grid">
-      <!-- Remplace les src par tes vignettes -->
-      <a class="card" href="https://www.instagram.com/momentwedd/" target="_blank" rel="noopener">
-        <img src="assets/img/photo1.jpg" alt="Mariage - détail" loading="lazy" />
+      <!-- mets tes propres vignettes dans /assets/img/photos/thumbs/ -->
+      <a class="card" href="photos.html">
+        <img src="assets/img/photos/thumbs/photo28.jpg" alt="Aperçu portfolio photo" loading="lazy" />
       </a>
-      <a class="card" href="https://www.instagram.com/momentwedd/" target="_blank" rel="noopener">
-        <img src="assets/img/photo2.jpg" alt="Mariage - couple" loading="lazy" />
+      <a class="card" href="photos.html">
+        <img src="assets/img/photos/thumbs/photo29.jpg" alt="Aperçu portfolio photo" loading="lazy" />
       </a>
-      <a class="card" href="assets/gallery-photos/index.html">
-        <img src="assets/img/photo3.jpg" alt="Mariage - cérémonie" loading="lazy" />
+      <a class="card" href="photos.html">
+        <img src="assets/img/photos/thumbs/photo30.jpg" alt="Aperçu portfolio photo" loading="lazy" />
       </a>
     </div>
     <div class="center">
-      <a class="btn" href="assets/gallery-photos/index.html">Voir la galerie complète</a>
+      <a class="btn" href="photos.html">Voir la galerie complète</a>
     </div>
   </section>
 
-  <section class="pv-grid" id="videos">
+  <!-- APERÇU VIDÉOS -->
+  <section class="pv-grid">
     <h2>Vidéos</h2>
     <p class="lead">Rythme, storytelling et ambiance ciné.</p>
     <div class="grid">
-      <!-- Exemples YouTube/Vimeo : remplace les liens -->
-      <a class="card video" href="https://www.youtube.com/@momentwedd" target="_blank" rel="noopener">
-        <img src="assets/img/video1.jpg" alt="Highlight film" loading="lazy" />
+      <!-- vignettes vidéos dans /assets/img/videos/thumbs/ -->
+      <a class="card video" href="videos.html">
+        <img src="assets/img/videos/thumbs/video1.jpg" alt="Teaser - aperçu" loading="lazy" />
         <span class="play">►</span>
       </a>
-      <a class="card video" href="https://www.youtube.com/@momentwedd" target="_blank" rel="noopener">
-        <img src="assets/img/video2.jpg" alt="Teaser" loading="lazy" />
+      <a class="card video" href="videos.html">
+        <img src="assets/img/videos/thumbs/video2.jpg" alt="Highlight - aperçu" loading="lazy" />
         <span class="play">►</span>
       </a>
-      <a class="card video" href="https://www.youtube.com/@momentwedd" target="_blank" rel="noopener">
-        <img src="assets/img/video3.jpg" alt="Film complet" loading="lazy" />
+      <a class="card video" href="videos.html">
+        <img src="assets/img/videos/thumbs/video3.jpg" alt="Film - aperçu" loading="lazy" />
         <span class="play">►</span>
       </a>
     </div>
     <div class="center">
-      <a class="btn btn--ghost" href="https://www.youtube.com/@momentwedd" target="_blank" rel="noopener">Voir nos films</a>
+      <a class="btn btn--ghost" href="videos.html">Voir nos films</a>
     </div>
   </section>
 
-  <!-- A PROPOS -->
+  <!-- À PROPOS -->
   <section id="about" class="about">
     <div class="about__text">
       <h2>Luiza & Artak</h2>
@@ -91,17 +93,16 @@
       <p><strong>Moment Wedding Production</strong> est né pour élargir notre équipe et vous offrir encore plus de créativité, d’énergie et de beaux souvenirs.</p>
       <p class="muted">Basés à Strasbourg • Partout en France et dans le monde</p>
       <div class="cta">
-        <a href="#contact" class="btn">Demander un devis</a>
+        <a href="about.html" class="btn">En savoir plus</a>
       </div>
     </div>
     <div class="about__img">
-      <!-- Remplace par un portrait duo -->
       <img src="assets/img/about.jpg" alt="Luiza & Artak" loading="lazy" />
     </div>
   </section>
 
   <!-- TARIFS / OFFRES -->
-  <section id="tarifs" class="pricing">
+  <section class="pricing">
     <h2>Offres & Tarifs</h2>
     <div class="pricing__grid">
       <article class="price-card">
@@ -111,7 +112,7 @@
           <li>Galerie en ligne HD</li>
           <li>Preview sous 72h</li>
         </ul>
-        <a href="#contact" class="btn">Demander le détail</a>
+        <a href="tarifs.html" class="btn">Détails & options</a>
       </article>
       <article class="price-card">
         <h3>Vidéo</h3>
@@ -120,7 +121,7 @@
           <li>Film 6–10 min</li>
           <li>Montage ciné & musique</li>
         </ul>
-        <a href="#contact" class="btn">Demander le détail</a>
+        <a href="tarifs.html" class="btn">Détails & options</a>
       </article>
       <article class="price-card">
         <h3>Photo + Vidéo</h3>
@@ -129,14 +130,14 @@
           <li>Galerie + films</li>
           <li>Option drone</li>
         </ul>
-        <a href="#contact" class="btn">Obtenir un devis</a>
+        <a href="tarifs.html" class="btn">Détails & options</a>
       </article>
     </div>
     <p class="muted center">Options : séance engagement, album, drone, livraison express, second shooter…</p>
   </section>
 
-  <!-- TEMOIGNAGES -->
-  <section id="temoignages" class="testimonials">
+  <!-- TÉMOIGNAGES -->
+  <section class="testimonials">
     <h2>Témoignages</h2>
     <blockquote>
       « Discrets, pro et passionnés. Leurs images nous ont fait revivre notre journée. »<br/>
@@ -146,10 +147,13 @@
       « Sensibilité, lumière et style. Un rendu poétique et moderne. »<br/>
       <cite>— Élodie & Maxime</cite>
     </blockquote>
+    <div class="center" style="margin-top:1rem">
+      <a class="btn btn--ghost" href="temoignages.html">Lire d’autres avis</a>
+    </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq" class="faq">
+  <!-- FAQ (teaser) -->
+  <section class="faq">
     <h2>FAQ</h2>
     <details>
       <summary>Vous vous déplacez ?</summary>
@@ -163,29 +167,20 @@
       <summary>Comment réserver ?</summary>
       <p>Un contrat + un acompte pour bloquer la date. Échanges en visio possibles.</p>
     </details>
+    <div class="center" style="margin-top:1rem">
+      <a class="btn btn--ghost" href="faq.html">Voir toute la FAQ</a>
+    </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
+  <!-- CONTACT (teaser avec bouton) -->
+  <section class="contact">
     <h2>Contact</h2>
-    <p class="lead center">Racontez-nous votre projet, réponse sous 24h.</p>
-    <form class="contact__form" name="contact" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact" />
-      <div class="row">
-        <input type="text" name="nom" placeholder="Votre nom" required />
-        <input type="email" name="email" placeholder="Votre email" required />
-      </div>
-      <div class="row">
-        <input type="text" name="date" placeholder="Date du mariage (jj/mm/aaaa)" />
-        <input type="text" name="lieu" placeholder="Lieu" />
-      </div>
-      <textarea name="message" rows="6" placeholder="Parlez-nous de votre journée"></textarea>
-      <div class="cta center">
-        <button type="submit" class="btn">Envoyer</button>
-        <a class="btn btn--ghost" href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn btn--ghost" href="https://www.instagram.com/momentwedd/" target="_blank" rel="noopener">Instagram</a>
-      </div>
-    </form>
+    <p class="lead center">Racontez-nous votre projet — réponse sous 24h.</p>
+    <div class="cta center">
+      <a class="btn" href="contact.html">Écrire via le formulaire</a>
+      <a class="btn btn--ghost" href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn--ghost" href="https://www.instagram.com/momentwedd/" target="_blank" rel="noopener">Instagram</a>
+    </div>
   </section>
 
   <!-- FOOTER -->
