@@ -18,7 +18,7 @@ a { text-decoration:none; }
 .btn--ghost:hover { background:#fff; color:#333; }
 
 /* ===============================
-   HERO avec collage
+   HERO avec collage + overlay
 =================================*/
 .hero {
   position: relative;
@@ -31,8 +31,20 @@ a { text-decoration:none; }
   color: #fff;
 }
 
-.hero-overlay { position:absolute; inset:0; background:rgba(0,0,0,0.4); }
-.hero-content { position:relative; z-index:1; max-width:800px; padding:2rem; }
+.hero-overlay {
+  position: absolute;
+  inset:0;
+  background: rgba(0,0,0,0.4); /* overlay sombre pour lisibilité */
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 2rem;
+}
+
 .hero h1 { font-size:3rem; margin-bottom:1rem; font-weight:bold; }
 .hero .tags { font-size:1.2rem; font-style:italic; margin-bottom:2rem; }
 .hero .cta { display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; }
