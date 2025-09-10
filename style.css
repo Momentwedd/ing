@@ -1,5 +1,3 @@
-Voici le CSS complet prêt à copier-coller :
-
 /* ===========================
    VARIABLES GLOBALES
    =========================== */
@@ -30,14 +28,34 @@ h1, h2, h3 {
   margin: 0 0 .6rem; 
   font-family: 'Cammron', serif; 
   letter-spacing: 0.07em; 
+}
+
+/* ==== Titres principaux ==== */
+h1 { 
+  font-size: clamp(2rem, 3.5vw, 3rem); 
   text-transform: uppercase;
 }
 
-h1 { font-size: clamp(2rem, 3.5vw, 3rem); }
-h2 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); }
+/* ==== Titres secondaires de la page À propos ==== */
+.about-text h2 {
+  font-size: 1.3rem;    /* plus petit */
+  font-weight: normal;  /* non gras */
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  text-transform: none; /* pas de majuscules */
+}
+
+.about-text h3 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin-top: 1rem;
+  margin-bottom: 0.6rem;
+  text-transform: none;
+}
+
 .lead { font-size: 1.05rem; }
 
-.center { text-align: center; }
+.center { text-align:center; }
 .muted { color: var(--muted); }
 
 /* ===========================
@@ -53,7 +71,7 @@ h2 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); }
   border: 1px solid var(--brand);
 }
 
-.btn:hover { opacity: .9; }
+.btn:hover { opacity:.9; }
 .btn--ghost {
   background: transparent;
   color: var(--brand);
@@ -113,80 +131,79 @@ h2 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); }
   padding: 6rem 1rem;
 }
 
-.hero .tags { opacity: .9; margin: .5rem 0 1rem; }
+.hero .tags { opacity:.9; margin:.5rem 0 1rem; }
 
-.cta { display: flex; gap: .7rem; justify-content: center; flex-wrap: wrap; }
+.cta { display:flex; gap:.7rem; justify-content:center; flex-wrap:wrap; }
 
 /* ===========================
    SECTIONS
    =========================== */
-.pv-grid { padding: 3.5rem 1rem; max-width: 1100px; margin: auto; }
+.pv-grid { padding:3.5rem 1rem; max-width:1100px; margin:auto; }
 
 .about {
-  padding: 3.5rem 1rem;
-  max-width: 1100px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1.1fr .9fr;
-  gap: 2rem;
-  align-items: center;
+  padding:3.5rem 1rem;
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:2rem;
+  align-items:center;
 }
 
 .about__img img {
-  border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  border-radius:1rem;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 /* ===========================
-   À PROPOS / TEXTE COMPLET
+   À PROPOS / TEXTE
    =========================== */
-.about-text h3 { margin-top: 1rem; margin-bottom: .5rem; }
-.about-text p { margin-bottom: 1rem; }
+.about-text p { margin-bottom:1rem; }
 
 .about-text .muted {
-  color: var(--muted);
-  font-size: .9rem;
-  margin-top: .5rem;
+  color:var(--muted);
+  font-size:.9rem;
+  margin-top:.5rem;
 }
 
 /* ===========================
    FOOTER
    =========================== */
 .site-footer {
-  padding: 1.5rem 1rem;
-  text-align: center;
-  border-top: 1px solid #eee;
+  padding:1.5rem 1rem;
+  text-align:center;
+  border-top:1px solid #eee;
 }
 
 /* ===========================
    RESPONSIVE
    =========================== */
-@media (max-width: 900px) {
-  .about { grid-template-columns: 1fr; gap: 1.2rem; }
+@media (max-width:900px){
+  .about { grid-template-columns:1fr; gap:1.2rem; }
 }
 
-@media (max-width: 720px) {
+@media (max-width:720px){
   .site-nav {
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: .8rem;
-    box-shadow: 0 10px 25px rgba(0,0,0,.08);
-    padding: .7rem;
-    display: none;
-    flex-direction: column;
-    min-width: 180px;
+    position:absolute;
+    top:60px;
+    right:10px;
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:.8rem;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    padding:.7rem;
+    display:none;
+    flex-direction:column;
+    min-width:180px;
   }
-  .site-nav.open { display: flex; }
+  .site-nav.open{display:flex}
 }
 
 /* ===========================
    POLICE CAMMRON-REGULAR
    =========================== */
 @font-face {
-  font-family: 'Cammron';
+  font-family:'Cammron';
   src: url('fonts/Cammron-Regular.woff2') format('woff2'),
        url('fonts/Cammron-Regular.woff') format('woff');
   font-weight: normal;
