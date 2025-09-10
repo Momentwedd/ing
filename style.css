@@ -2,10 +2,10 @@
    VARIABLES GLOBALES
    =========================== */
 :root {
-  --bg: #fff; 
-  --text: #1c1c1c; 
-  --muted: #767676; 
-  --brand: #c59d5f; 
+  --bg: #fff;
+  --text: #1c1c1c;
+  --muted: #767676;
+  --brand: #c59d5f;
   --dark: #0f0f0f;
 }
 
@@ -19,49 +19,24 @@ body {
   color: var(--text);
   background: var(--bg);
   line-height: 1.6;
-  text-align: center; /* centre tout le contenu globalement */
 }
 
-img { max-width:100%; display:block; margin:auto; }
+img { max-width:100%; display:block; }
 
-h1, h2, h3 { 
-  line-height: 1.2; 
-  margin: 0 0 .6rem; 
-  font-family: 'Cammron', serif; 
-  letter-spacing: 0.07em; 
-}
-
-/* ==== Titres principaux ==== */
-h1 { 
-  font-size: clamp(2rem, 3.5vw, 3rem); 
+h1, h2, h3 {
+  font-family: 'Cammron', serif;
+  margin: 0 0 .6rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
 }
 
-/* ==== Titres secondaires ==== */
-h2 {
-  font-size: 1.3rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0.8rem;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 1.1rem;
-  margin-top: 1rem;
-  margin-bottom: 0.6rem;
-  font-weight: normal;
-}
-
-/* ==== Paragraphes ==== */
-p { margin-bottom: 1rem; }
-
-/* ==== Texte muté ==== */
-.muted {
-  color: var(--muted);
-  font-size: .9rem;
-  margin-top: .5rem;
-}
+h1 { font-size: clamp(2rem, 4vw, 3rem); }
+h2 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); }
+h3 { font-size: 1.2rem; font-weight: bold; margin-top:1rem; margin-bottom:.5rem; }
+p, li, a { font-family: 'Cammron', serif; }
+.lead { font-size: 1.05rem; }
+.center { text-align: center; }
+.muted { color: var(--muted); font-size: .9rem; }
 
 /* ===========================
    BOUTONS
@@ -76,7 +51,7 @@ p { margin-bottom: 1rem; }
   border: 1px solid var(--brand);
 }
 
-.btn:hover { opacity:.9; }
+.btn:hover { opacity: .9; }
 .btn--ghost {
   background: transparent;
   color: var(--brand);
@@ -105,107 +80,87 @@ p { margin-bottom: 1rem; }
   text-decoration: none;
 }
 
-.site-nav {
+.site-nav { display: flex; gap: 1rem; align-items: center; }
+.site-nav a { color: var(--dark); text-decoration: none; }
+.nav-toggle { display: none; font-size: 1.3rem; background: none; border: none; }
+
+/* ===========================
+   HERO AVEC OVERLAY
+   =========================== */
+.hero {
+  position: relative;
+  height: 70vh;
+  background: url('assets/hero.jpg') center/cover no-repeat;
   display: flex;
-  gap: 1rem;
   align-items: center;
+  justify-content: center;
 }
 
-.site-nav a {
-  color: var(--dark);
-  text-decoration: none;
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
-.nav-toggle {
-  display: none;
-  font-size: 1.3rem;
-  background: none;
-  border: none;
-}
+.hero .tags { font-size: 1.1rem; margin-bottom: 1.5rem; }
+.hero .cta a { margin: 0 .5rem; }
 
 /* ===========================
    CONTENEUR PRINCIPAL
    =========================== */
 .main-container {
-  max-width: 900px;   /* largeur maximale du contenu */
-  margin: 0 auto;     /* centre horizontalement */
-  padding: 0 1rem;    /* espace horizontal sur petits écrans */
-  text-align: center; /* centre tout le texte et contenu */
-}
-
-/* ===========================
-   HERO
-   =========================== */
-.hero {
-  min-height: 70vh;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  color: #fff;
-  background: #000 url("assets/hero.jpg") center/cover no-repeat;
-  padding: 6rem 1rem;
-}
-
-.hero .tags { opacity:.9; margin:.5rem 0 1rem; }
-
-.cta { display:flex; gap:.7rem; justify-content:center; flex-wrap:wrap; }
-
-/* ===========================
-   SECTIONS
-   =========================== */
-.pv-grid, .about, .contact__form, .pricing__grid, .testimonials, .faq {
-  margin: auto;
-  padding: 3rem 0;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
-/* ABOUT */
-.about {
-  display: grid;
-  grid-template-columns: 1.1fr .9fr;
-  gap: 2rem;
-  align-items: center;
-}
-
+/* ===========================
+   ABOUT / À PROPOS
+   =========================== */
 .about__img img {
   border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(0,0,0,.08);
-  margin: auto;
+  margin-top: 1rem;
 }
 
-.about-text {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  text-align: center;
+/* ===========================
+   PRICING / OFFRES
+   =========================== */
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-/* PRICING / OFFRES */
 .price-card {
   background:#fff;
   padding:1.4rem;
   border-radius:1rem;
   box-shadow:0 10px 25px rgba(0,0,0,.06);
-  margin-bottom:1.5rem;
-  text-align:center;
 }
 
 .price-card h3 { margin-bottom:.6rem; }
-.price-card ul { margin:0 0 1rem 1.1rem; text-align:left; display:inline-block; }
 
-/* TESTIMONIALS */
+/* ===========================
+   TÉMOIGNAGES
+   =========================== */
 .testimonials blockquote {
   background:#fff;
   border-left:4px solid var(--brand);
-  margin:0 0 1rem;
+  margin:1rem 0;
   padding:1rem;
   border-radius:.5rem;
   box-shadow:0 10px 25px rgba(0,0,0,.04);
 }
-
 .testimonials cite { color:var(--muted); }
 
-/* FAQ */
+/* ===========================
+   FAQ
+   =========================== */
 .faq details {
   background:#fff;
   border:1px solid #eee;
@@ -214,60 +169,39 @@ p { margin-bottom: 1rem; }
   padding:.8rem 1rem;
 }
 
-/* CONTACT */
-.contact {
-  padding:3.5rem 0;
-  background:#f8f8f8;
-}
-
-.contact input,.contact textarea {
-  width:100%;
-  padding:.8rem;
-  border:1px solid #ddd;
-  border-radius:.6rem;
-  background:#fff;
-}
-
+/* ===========================
+   CONTACT
+   =========================== */
+.contact__form { max-width:900px; margin:auto; }
+.contact .row { display:grid; grid-template-columns:1fr 1fr; gap:.8rem; margin-bottom:.8rem; }
+.contact input, .contact textarea { width:100%; padding:.8rem; border:1px solid #ddd; border-radius:.6rem; background:#fff; }
 .contact textarea { resize:vertical; }
 
-/* FOOTER */
-.site-footer {
-  padding:1.5rem 1rem;
-  text-align:center;
-  border-top:1px solid #eee;
-}
+/* ===========================
+   FOOTER
+   =========================== */
+.site-footer { padding:1.5rem 1rem; text-align:center; border-top:1px solid #eee; }
 
 /* ===========================
    RESPONSIVE
    =========================== */
-@media (max-width:900px){
-  .about { grid-template-columns:1fr; gap:1.2rem; }
-  .pv-grid .grid{grid-template-columns:1fr 1fr;}
-  .pricing__grid{grid-template-columns:1fr;}
+@media(max-width:900px){
+  .pricing__grid { grid-template-columns: 1fr; }
 }
-
-@media (max-width:720px){
+@media(max-width:720px){
   .site-nav {
-    position:absolute;
-    top:60px;
-    right:10px;
-    background:#fff;
-    border:1px solid #eee;
-    border-radius:.8rem;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    padding:.7rem;
-    display:none;
-    flex-direction:column;
-    min-width:180px;
+    position: absolute; top:60px; right:10px; background:#fff; border:1px solid #eee;
+    border-radius:.8rem; box-shadow:0 10px 25px rgba(0,0,0,.08);
+    padding:.7rem; display:none; flex-direction:column; min-width:180px;
   }
-  .site-nav.open{display:flex}
-  .pv-grid .grid{grid-template-columns:1fr;}
-  .contact .row{grid-template-columns:1fr;}
+  .site-nav.open { display:flex; }
 }
 
-/* POLICE CAMMRON-REGULAR */
+/* ===========================
+   POLICE CAMMRON
+   =========================== */
 @font-face {
-  font-family:'Cammron';
+  font-family: 'Cammron';
   src: url('fonts/Cammron-Regular.woff2') format('woff2'),
        url('fonts/Cammron-Regular.woff') format('woff');
   font-weight: normal;
