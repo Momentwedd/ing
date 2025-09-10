@@ -7,6 +7,44 @@
   <meta name="description" content="À propos de Luiza & Artak — fondateurs de Moment Wedding Production, duo photo & vidéo à Strasbourg.">
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
+  <style>
+    /* ==== Styles spécifiques à la page À propos ==== */
+    .about-text h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: clamp(1.8rem, 2.5vw, 2.2rem);
+    }
+
+    .about-text p {
+      margin-bottom: 1.3rem;
+      line-height: 1.7;
+    }
+
+    .about-text img {
+      margin-top: 2rem;
+      border-radius: 1rem;
+      max-width: 100%;
+      display: block;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+
+    .about-text blockquote {
+      margin: 2rem 0;
+      font-style: italic;
+      text-align: center;
+      color: #555;
+    }
+
+    /* Responsive */
+    @media (max-width: 720px) {
+      .about-text h2 {
+        font-size: clamp(1.6rem, 4vw, 2rem);
+      }
+      .about-text p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -38,9 +76,13 @@
     <h2>Une équipe à vos côtés</h2>
     <p>Au fil des années, nous avons également réuni autour de nous des collaborateurs passionnés. Photographes, vidéastes et créateurs viennent enrichir notre univers pour vous offrir toujours plus de possibilités et un regard multiple sur vos plus beaux instants.</p>
 
+    <blockquote>
+      « De notre propre histoire d’amour est née l’envie de raconter la vôtre. »
+    </blockquote>
+
     <p class="muted">Basés à Strasbourg • Partout en France et à l’international</p>
 
-    <img src="assets/img/about.jpg" alt="Luiza & Artak" style="max-width:100%;border-radius:1rem;margin-top:2rem">
+    <img src="assets/img/about.jpg" alt="Luiza & Artak">
   </main>
 
   <footer class="site-footer">
