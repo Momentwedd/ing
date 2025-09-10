@@ -36,7 +36,30 @@ h1 {
   text-transform: uppercase;
 }
 
-/* ==== Titres secondaires de la page À propos en gras ==== */
+/* ===========================
+   PAGE À PROPOS
+   =========================== */
+.about-text {
+  text-align: center;           /* centre tout le texte */
+  padding-left: 1.5rem;         /* espace à gauche */
+  padding-right: 1.5rem;        /* espace à droite */
+}
+
+@media (min-width: 900px) {
+  .about-text {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* ==== Titres secondaires h2 en gras ==== */
 .about-text h2 {
   font-size: 1.3rem;    
   font-weight: 700;  /* gras */
@@ -45,6 +68,7 @@ h1 {
   text-transform: none; 
 }
 
+/* ==== Sous-sous-titres h3 ==== */
 .about-text h3 {
   font-size: 1.1rem;
   font-weight: normal;
@@ -161,7 +185,7 @@ h1 {
 .about-text p { margin-bottom:1rem; }
 
 .about-text .muted {
-  color: var(--muted);
+  color:var(--muted);
   font-size:.9rem;
   margin-top:.5rem;
 }
