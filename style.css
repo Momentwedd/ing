@@ -72,3 +72,12 @@ h2{font-size:clamp(1.6rem,2.5vw,2.2rem)}
   .pv-grid .grid{grid-template-columns:1fr}
   .contact .row{grid-template-columns:1fr}
 }
+body {
+  font-family: 'TheanoDidotRegular', serif;
+}
+
+h1, h2, h3 {
+  font-family: 'TheanoDidotRegular', serif;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
