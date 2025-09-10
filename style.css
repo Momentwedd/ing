@@ -36,10 +36,10 @@ h1 {
   text-transform: uppercase;
 }
 
-/* ==== Titres secondaires de la page À propos ==== */
+/* ==== Titres secondaires de la page À propos en gras ==== */
 .about-text h2 {
   font-size: 1.3rem;    
-  font-weight: normal;  
+  font-weight: 700;  /* gras */
   margin-top: 1.5rem;
   margin-bottom: 0.8rem;
   text-transform: none; 
