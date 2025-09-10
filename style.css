@@ -25,12 +25,12 @@ a { text-decoration:none; }
 .hero-content { position:relative; z-index:1; max-width:800px; padding:2rem; }
 .hero h1 { font-size:3rem; margin-bottom:1rem; }
 .hero .tags { font-size:1.2rem; font-style:italic; margin-bottom:2rem; }
-.hero .cta { display:flex; justify-content:center; gap:1rem; }
+.hero .cta { display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; }
 
 /* ===============================
    SECTIONS CENTRÉES
 =================================*/
-section { padding:4rem 2rem; text-align:center; max-width:1000px; margin:0 auto; }
+section { padding:4rem 2rem; text-align:center; max-width:900px; margin:0 auto; }
 h2 { font-size:2.5rem; margin-bottom:2rem; }
 p { font-size:1.2rem; margin-bottom:1.5rem; }
 
@@ -65,4 +65,4 @@ footer { background:#333; color:#fff; padding:2rem; text-align:center; }
 /* ===============================
    RESPONSIVE
 =================================*/
-@media(max-width:900px){ .pricing-grid{flex-direction:column;}}
+@media(max-width:900px){ .pricing-grid{flex-direction:column;} }
